@@ -26,12 +26,8 @@ class task1 extends StatelessWidget {
           actions: [Icon(Icons.close,color: Colors.red,)],
         ),*/
         body: ListVertical(),
-        bottomNavigationBar: BottomNavigationBar(items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home),
-          label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.settings),
-          label: '')
-        ],),
+        bottomSheet: BottomAppBar(child: Icon(Icons.warning_outlined,color: Colors.red,),color: Colors.white,),
+        
       ),
     );
   }
@@ -82,7 +78,7 @@ class ListVertical extends StatelessWidget {
         Expanded(
           child: ListView.builder(
             shrinkWrap: true,
-            itemCount: 10,
+            itemCount: 4,
             itemBuilder: (BuildContext context, int index) {
              
               return Padding(
